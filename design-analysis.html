@@ -50,7 +50,7 @@
     <p>Screenshot and paragraph of Typography</p>
 
     <h2>Site Purpose</h2>
-    <p>Provide all inclusive access to sports media.</p>
+    <p>Provide all-inclusive access to sports media.</p>
 
     <h2>Target Audience</h2>
 
@@ -58,7 +58,6 @@
         <li>Age: 18-40 years old</li>
         <li>Occupation: White collar </li>
         <li>Income: $50,000 to $150,000</li>
-        <li>Other: </li>
     </ul>
 
     <h2>Persona</h2>
@@ -72,8 +71,15 @@
 
     <ul>
         <li>&copy 2019</li>
-        <li>Last Updated:</li>
+        <li>Last Updated: <span id= "date"></span></li>
     </ul>
+
+    <script>n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
 
 </body>
 </html>
