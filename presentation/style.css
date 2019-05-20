@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 @media screen and (max-width: 900px) {
     body {
         background: black;
     }
+
     main {
         color: white;
     }
+
     a {
         color: yellow;
     }
