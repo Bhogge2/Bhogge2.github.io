@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hogge | Franklin, ID | Weather Site</title>
+    <title>Franklin, ID | Weather Site</title>
     <meta name="description" content="Short Description of the page.">
     <meta name="viewport" content="width=device-width">
 </head>
@@ -14,48 +14,56 @@
         <span>The Weather Site</span>
     </header>
     <main>
-        <h1>Franklin, Idaho</h1>
+        <section id = "locationInfo">
+            <h1>Franklin, Idaho</h1>
 
-        <span><strong>ZIP:</strong> 83237 |</span>
-        <span><strong>Elevation:</strong> 4968 ft. | </span>
-        <span><strong>Location: </strong>42.07&deg; N, 111.79&deg; W</span>
+            <span><strong>ZIP:</strong> 83237 |</span>
+            <span><strong>Elevation:</strong> 4968 ft. | </span>
+            <span><strong>Location: </strong>42.07&deg; N, 111.79&deg; W</span>
+        </section>
+        
+        <section id = "temperature">
+            <h2>Temperature</h2>
+            <p>40&deg;F</p>
+            <span>64&deg;F </span>
+            <span>41&deg;F</span>
+            <p>Feels like 40&deg;F</p>
+        </section>
 
-        <h2>Temperature</h2>
-        <p>40&deg;F</p>
-        <span>64&deg;F </span>
-        <span>41&deg;F</span>
-        <p>Feels like 40&deg;F</p>
-
-        <h2>Wind</h2>
-        <img src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
-        <p>5 mph</p>
-        <p><strong>Direction</strong>: SW</p>
-        <p><strong>Gusts</strong>: 10-12mph</p>
+        <section id = "wind">
+            <h2>Wind</h2>
+            <img src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
+            <p>5 mph</p>
+            <p><strong>Direction</strong>: SW</p>
+            <p><strong>Gusts</strong>: 10-12mph</p>
+        </section>
 
         <h2>Clear</h2>
         <img src="../franklin-idaho-weather/images/clear.jpg" alt="Clear day">
 
-        <h2>Hourly Forecast</h2>
-        <span>10am: 41&deg;F | </span>
-        <span>11am: 41&deg;F | </span>
-        <span>12pm: 41&deg;F | </span>
-        <span>1pm: 41&deg;F | </span>
-        <span>2pm: 41&deg;F | </span>
-        <span>3pm: 41&deg;F | </span>
-        <span>4pm: 42&deg;F | </span>
-        <span>5pm: 44&deg;F | </span>
-        <span>6pm: 44&deg;F | </span>
-        <span>7pm: 46&deg;F | </span>
-        <span>8pm: 49&deg;F | </span>
-        <span>9pm: 51&deg;F | </span>
-        <span>10pm: 55&deg;F | </span>
+        <section id = "forecast">
+            <h2>Hourly Forecast</h2>
+            <span>10am: 41&deg;F | </span>
+            <span>11am: 41&deg;F | </span>
+            <span>12pm: 41&deg;F | </span>
+            <span>1pm: 41&deg;F | </span>
+            <span>2pm: 41&deg;F | </span>
+            <span>3pm: 41&deg;F | </span>
+            <span>4pm: 42&deg;F | </span>
+            <span>5pm: 44&deg;F | </span>
+            <span>6pm: 44&deg;F | </span>
+            <span>7pm: 46&deg;F | </span>
+            <span>8pm: 49&deg;F | </span>
+            <span>9pm: 51&deg;F | </span>
+            <span>10pm: 55&deg;F | </span>
+        </section>
     </main>
     <footer>
         &copy;2019, The Weather Site
     </footer>
     <nav>
         <ul>
-            <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
+            <li><a href="" title="Go to the Weather Site home page">Current</a></li>
             <li><a href="#" title="Open a search bar">Search</a></li>
             <li><a href="#" title="Go to the Franklin Weather Site page">Franklin</a></li>
             <li><a href="#" title="Go to the Greenville Weather Site page">Greenville</a></li>
