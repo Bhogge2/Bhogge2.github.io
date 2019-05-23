@@ -6,62 +6,67 @@
     <title>Franklin, ID | Weather Site</title>
     <meta name="description" content="Short Description of the page.">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="../franklin-idaho-weather/css/screen.css">
 </head>
 
 <body>
     <header>
-        <img src="../franklin-idaho-weather/images/logo.jpg" alt="Weather site logo">
-        <span id="headTitle">The Weather Site</span>
+        <img id="logo" src="../franklin-idaho-weather/images/logo.jpg" alt="weather site logo">
+        <span id="site-brand"><strong>The Weather Site</strong></span>
     </header>
     <main>
-        <section id="locationInfo">
+        <section id="location-info">
             <h1>Franklin, Idaho</h1>
 
-            <span><strong>ZIP:</strong> 83237 |</span>
-            <span><strong>Elevation:</strong> 4968 ft. | </span>
-            <span><strong>Location: </strong>42.07&deg; N, 111.79&deg; W</span>
+            <span id="zip"><strong>Zip:</strong> 83237 |</span>
+            <span id="elevation"><strong>Elevation:</strong> 4968 ft. | </span>
+            <span id="location"><strong>Location: </strong>42.07&deg; N, 111.79&deg; W</span>
         </section>
 
-        <section class="middleBoxes">
+        <section class="middle-boxes">
+            <section id="background-container">
 
-            <section id="temperature">
-                <h2>Temperature</h2>
-                <p>40&deg;F</p>
-                <span>64&deg;F </span>
-                <span>41&deg;F</span>
-                <p>Feels like 40&deg;F</p>
-            </section>
+                <section id="temperature" class="tile">
+                    <h2>Temperature</h2>
+                    <p id="current-temp"><strong>40&deg;F</strong></p>
+                    <span id="daily-high">64&deg;F </span>
+                    <span id="daily-low">41&deg;F</span>
+                    <p id="feels-like">Feels Like 40&deg;F</p>
+                </section>
 
-            <section id="wind">
-                <h2>Wind</h2>
-                <img src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
-                <p>5 mph</p>
-                <p><strong>Direction</strong>: SW</p>
-                <p><strong>Gusts</strong>: 10-12mph</p>
-            </section>
+                <section id="wind" class="tile">
+                    <h2>Wind</h2>
+                    <img id="wind-compass" src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
+                    <p id="mph-compass">5 mph</p>
+                    <p id = "wind-direction"><strong>Direction</strong>: SW</p>
+                    <p id = "wind-gusts"><strong>Gusts</strong>: 10-12mph</p>
+                </section>
 
-            <section id="sky">
-                <h2>Clear</h2>
-                <img src="../franklin-idaho-weather/images/clear.jpg" alt="Clear day">
+                <section id="sky" class="tile">
+                    <h2>Rain</h2>
+                    <section id="sky-box"></section>
+                </section>
             </section>
-            
         </section>
 
-        <section id="forecast">
+        <section id="forecast" class="tile">
             <h2>Hourly Forecast</h2>
-            <span>10am: 41&deg;F | </span>
-            <span>11am: 41&deg;F | </span>
-            <span>12pm: 41&deg;F | </span>
-            <span>1pm: 41&deg;F | </span>
-            <span>2pm: 41&deg;F | </span>
-            <span>3pm: 41&deg;F | </span>
-            <span>4pm: 42&deg;F | </span>
-            <span>5pm: 44&deg;F | </span>
-            <span>6pm: 44&deg;F | </span>
-            <span>7pm: 46&deg;F | </span>
-            <span>8pm: 49&deg;F | </span>
-            <span>9pm: 51&deg;F | </span>
-            <span>10pm: 55&deg;F | </span>
+            <ul>
+                <li id="10am">10am: 41&deg;F | </li>
+                <li id="11am">11am: 41&deg;F | </li>
+                <li id="12am">12pm: 41&deg;F | </li>
+                <li id="1pm">1pm: 41&deg;F | </li>
+                <li id="2pm">2pm: 41&deg;F | </li>
+                <li id="3pm">3pm: 41&deg;F | </li>
+                <li id="4pm">4pm: 42&deg;F | </li>
+                <li id="5pm">5pm: 44&deg;F | </li>
+                <li id="6pm">6pm: 44&deg;F | </li>
+                <li id="7pm">7pm: 46&deg;F | </li>
+                <li id="8pm">8pm: 49&deg;F | </li>
+                <li id="9pm">9pm: 51&deg;F | </li>
+                <li id="10pm">10pm: 55&deg;F </li>
+            </ul>
+        </section>
         </section>
     </main>
     <footer>
@@ -79,5 +84,3 @@
 </body>
 
 </html>
-
-every bit needs its own id

@@ -7,15 +7,25 @@
 
 /* 1. Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+@import url(../css/normalize.css);
 
 /* 2. General Rules */
 
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
 body {
     font-family: Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Sansita, sans-serif;
+    font-family: sansita, Eurostyle, sans-serif;
 }
 
 header {
@@ -24,4 +34,147 @@ header {
 
 /* 3. Mobile Rules */
 
+ #site-brand {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#logo {
+    height: 40px;
+    margin-bottom: -5px;
+    padding-left: 5px;
+}
+
+#location-info h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+#location-info h1, #zip {
+    padding-left: 5px;
+}
+
+#wind h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#zip, #location, #elevation {
+    font-size: 0.75em;
+}
+
+.middle-boxes {
+    text-align: center;
+}
+
+#background-container {
+    z-index: -1;
+    background-image: url(../images/rain.jpg);
+}
+
+.tile {
+    background-color: rgba(200, 200, 200, 0.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#current-temp {
+    font-size: 5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+
+#daily-high {
+    color: #b12e2f;
+}
+
+#daily-low {
+    color: #383bb7;
+}
+
+#wind-compass {
+    transform: rotate(225deg);
+    width: 30%;
+    height: auto;
+}
+
+#mph-compass {
+    position: relative;
+    bottom: 110px;
+    z-index: 2;
+    margin-bottom: -55px;
+}
+
+#wind-direction {
+    margin-bottom: 0px;
+}
+
+#wind-gusts {
+    margin-top: 0px;
+}
+
+#sky-box {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0,0,0, 0.5);
+    margin: auto;
+}
+
+#forecast {
+    background-color: #dedede;
+}
+
+#forecast h2 {
+    text-align: center;
+}
+
+#forecast ul {
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: -30px;
+}
+
+#forecast li {
+    display: inline-block;
+    padding: 0px;
+    text-decoration: none;
+}
+
+footer {
+    margin-bottom: 2em;
+    min-height: 20px;
+}
+
+footer, nav {
+    background-color: #0e89d5;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0 2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    min-height: 60px;
+  }
+
+nav ul li {
+    display: inline-block; 
+    list-style: none; 
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 /* 4. Large Screen Rules */
+/* overflow: scroll; */
