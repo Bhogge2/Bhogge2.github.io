@@ -11,37 +11,43 @@
 <body>
     <header>
         <img src="../franklin-idaho-weather/images/logo.jpg" alt="Weather site logo">
-        <span>The Weather Site</span>
+        <span id="headTitle">The Weather Site</span>
     </header>
     <main>
-        <section id = "locationInfo">
+        <section id="locationInfo">
             <h1>Franklin, Idaho</h1>
 
             <span><strong>ZIP:</strong> 83237 |</span>
             <span><strong>Elevation:</strong> 4968 ft. | </span>
             <span><strong>Location: </strong>42.07&deg; N, 111.79&deg; W</span>
         </section>
-        
-        <section id = "temperature">
-            <h2>Temperature</h2>
-            <p>40&deg;F</p>
-            <span>64&deg;F </span>
-            <span>41&deg;F</span>
-            <p>Feels like 40&deg;F</p>
+
+        <section class="middleBoxes">
+
+            <section id="temperature">
+                <h2>Temperature</h2>
+                <p>40&deg;F</p>
+                <span>64&deg;F </span>
+                <span>41&deg;F</span>
+                <p>Feels like 40&deg;F</p>
+            </section>
+
+            <section id="wind">
+                <h2>Wind</h2>
+                <img src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
+                <p>5 mph</p>
+                <p><strong>Direction</strong>: SW</p>
+                <p><strong>Gusts</strong>: 10-12mph</p>
+            </section>
+
+            <section id="sky">
+                <h2>Clear</h2>
+                <img src="../franklin-idaho-weather/images/clear.jpg" alt="Clear day">
+            </section>
+            
         </section>
 
-        <section id = "wind">
-            <h2>Wind</h2>
-            <img src="../franklin-idaho-weather/images/wind-pointer.png" alt="Wind pointer">
-            <p>5 mph</p>
-            <p><strong>Direction</strong>: SW</p>
-            <p><strong>Gusts</strong>: 10-12mph</p>
-        </section>
-
-        <h2>Clear</h2>
-        <img src="../franklin-idaho-weather/images/clear.jpg" alt="Clear day">
-
-        <section id = "forecast">
+        <section id="forecast">
             <h2>Hourly Forecast</h2>
             <span>10am: 41&deg;F | </span>
             <span>11am: 41&deg;F | </span>
@@ -73,3 +79,5 @@
 </body>
 
 </html>
+
+every bit needs its own id
