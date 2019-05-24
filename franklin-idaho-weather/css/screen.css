@@ -13,18 +13,25 @@
 
 html {
     box-sizing: border-box;
-   }
-   
-   *, *:before, *:after{
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-   }
+}
 
 body {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: sansita, Eurostyle, sans-serif;
 }
 
@@ -34,7 +41,7 @@ header {
 
 /* 3. Mobile Rules */
 
- #site-brand {
+#site-brand {
     font-size: 2em;
     font-weight: 600;
 }
@@ -50,7 +57,9 @@ header {
     margin-bottom: 5px;
     font-size: 2em;
 }
-#location-info h1, #zip {
+
+#location-info h1,
+#zip {
     padding-left: 5px;
 }
 
@@ -59,7 +68,9 @@ header {
     margin-bottom: 10px;
 }
 
-#zip, #location, #elevation {
+#zip,
+#location,
+#elevation {
     font-size: 0.75em;
 }
 
@@ -83,7 +94,7 @@ header {
     font-size: 5em;
     margin-top: 0px;
     margin-bottom: 0px;
-} 
+}
 
 #daily-high {
     color: #b12e2f;
@@ -117,7 +128,7 @@ header {
 #sky-box {
     height: 200px;
     width: 200px;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: auto;
 }
 
@@ -146,7 +157,8 @@ footer {
     min-height: 20px;
 }
 
-footer, nav {
+footer,
+nav {
     background-color: #0e89d5;
 }
 
@@ -163,11 +175,11 @@ nav ul {
     display: flex;
     justify-content: space-around;
     min-height: 60px;
-  }
+}
 
 nav ul li {
-    display: inline-block; 
-    list-style: none; 
+    display: inline-block;
+    list-style: none;
     margin-top: 20px;
 }
 
@@ -177,4 +189,3 @@ nav a {
 }
 
 /* 4. Large Screen Rules */
-/* overflow: scroll; */
