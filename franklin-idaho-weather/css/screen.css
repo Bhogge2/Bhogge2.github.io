@@ -43,6 +43,7 @@ header {
 
 /* 3. Mobile Rules */
 
+/* Header */
 #site-brand {
     font-size: 2em;
     font-weight: 600;
@@ -54,6 +55,7 @@ header {
     padding-left: 5px;
 }
 
+/* location-info */
 #location-info h1 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -65,17 +67,13 @@ header {
     padding-left: 5px;
 }
 
-#wind h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 #zip,
 #location,
 #elevation {
     font-size: 0.75em;
 }
 
+/* middle boxes */
 .middle-boxes {
     text-align: center;
 }
@@ -92,6 +90,7 @@ header {
     border-radius: 15px;
 }
 
+/* temp tile */
 #current-temp {
     font-size: 5em;
     margin-top: 0px;
@@ -104,6 +103,12 @@ header {
 
 #daily-low {
     color: #383bb7;
+}
+
+/* wind tile */
+#wind h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #wind-compass {
@@ -127,6 +132,7 @@ header {
     margin-top: 0px;
 }
 
+/* sky tile */
 #sky-box {
     height: 200px;
     width: 200px;
@@ -134,6 +140,7 @@ header {
     margin: auto;
 }
 
+/* forecast tile */
 #forecast {
     background-color: #dedede;
 }
@@ -154,21 +161,20 @@ header {
     text-decoration: none;
 }
 
+/* footer */
 footer {
     margin-bottom: 2em;
     min-height: 20px;
-}
-
-footer,
-nav {
     background-color: #0e89d5;
 }
 
+/* nav */
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: #0e89d5;
 }
 
 nav ul {
