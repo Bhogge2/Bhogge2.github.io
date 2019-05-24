@@ -7,6 +7,8 @@
 
 /* 1. Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* Normalize for browsers */
 @import url(../css/normalize.css);
 
 /* 2. General Rules */
