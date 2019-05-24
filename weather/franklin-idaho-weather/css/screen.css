@@ -37,7 +37,15 @@ h6 {
     font-family: sansita, Eurostyle, sans-serif;
 }
 
+/* header */
 header {
+    background-color: #0e89d5;
+}
+
+/* footer */
+footer {
+    margin-bottom: 2em;
+    min-height: 20px;
     background-color: #0e89d5;
 }
 
@@ -159,13 +167,6 @@ header {
     display: inline-block;
     padding: 0px;
     text-decoration: none;
-}
-
-/* footer */
-footer {
-    margin-bottom: 2em;
-    min-height: 20px;
-    background-color: #0e89d5;
 }
 
 /* nav */
