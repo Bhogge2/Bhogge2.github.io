@@ -91,7 +91,7 @@ footer {
     background-image: url(../images/rain.jpg);
 }
 
-.tile {
+.middle-tile, .tile {
     background-color: rgba(200, 200, 200, 0.6);
     margin: .2em auto;
     border: 1px solid;
@@ -201,5 +201,22 @@ nav a {
 @media screen and (min-width: 800px) {
     header {
         background-color: white;
+    }
+
+    #location-info {
+        margin-bottom: 10px;
+    }
+
+    #background-container {
+        display: flex;
+    }
+
+    #forecast {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    footer {
+        background-color: white;
+        border-top: 3px solid;
     }
 }
