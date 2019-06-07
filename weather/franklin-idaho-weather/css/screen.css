@@ -176,6 +176,7 @@ nav {
     left: 0;
     width: 100%;
     background-color: #0e89d5;
+    z-index: 3;
 }
 
 nav ul {
@@ -199,8 +200,25 @@ nav a {
 
 /* 4. Large Screen Rules */
 @media screen and (min-width: 800px) {
+
+    body>div {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 3000px;
+    }
+
     header {
         background-color: white;
+    }
+
+    nav {
+        position: static;
+        background-color: white;
+    }
+
+    nav a {
+        color: black;
+        justify-content: none;
     }
 
     #location-info {
