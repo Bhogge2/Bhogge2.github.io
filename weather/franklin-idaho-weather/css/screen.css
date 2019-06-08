@@ -88,7 +88,9 @@ footer {
 
 #background-container {
     z-index: -1;
-    background-image: url(../images/rain.jpg);
+    background-image: url(../images/rain-400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .middle-tile, .tile {
@@ -227,6 +229,9 @@ nav a {
 
     #background-container {
         display: flex;
+        background-image: url(../images/rain-1200.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #forecast {
