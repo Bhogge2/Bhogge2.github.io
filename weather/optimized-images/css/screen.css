@@ -19,6 +19,10 @@ div>main {
     margin: 10px;
 }
 
+h1 {
+    font-size: 3em;
+}
+
 /* 3. Mobile Rules */
 .large {
     display: none;
