@@ -234,6 +234,18 @@ nav a {
         background-size: cover;
     }
 
+    #wind-compass {
+        width: 50%;
+        height: auto;
+    }
+
+    #mph-compass {
+        position: relative;
+        bottom: 80px;
+        z-index: 2;
+        margin-bottom: -55px;
+    }
+
     #forecast {
         margin-bottom: 20px;
         margin-top: 20px;
