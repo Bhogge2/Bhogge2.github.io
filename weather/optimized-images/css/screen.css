@@ -8,7 +8,31 @@
 /* 1. Imports */
 
 /* 2. General Rules */
+div>main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
 
 /* 3. Mobile Rules */
+.large {
+    display: none;
+}
 
 /* 4. Large Screen Rules */
+@media screen and (min-width: 1300px) {
+
+    .small {
+        display:none;
+    }
+
+    .large {
+        display: block;
+    }
+
+}
