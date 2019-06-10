@@ -39,4 +39,8 @@ h1 {
         display: block;
     }
 
+    h2 {
+        font-size: 3em;
+    }
+
 }
