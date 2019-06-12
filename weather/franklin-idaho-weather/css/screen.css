@@ -37,6 +37,38 @@ h6 {
     font-family: sansita, Eurostyle, sans-serif;
 }
 
+.n {
+    transform: rotate(0deg);
+}
+
+.ne {
+    transform: rotate(45deg);
+}
+
+.e {
+    transform: rotate(90deg);
+}
+
+.se {
+    transform: rotate(135deg);
+}
+
+.s {
+    transform: rotate(180deg);
+}
+
+.sw {
+    transform: rotate(225deg);
+}
+
+.w {
+    transform: rotate(270deg);
+}
+
+.nw {
+    transform: rotate(315deg);
+}
+
 /* header */
 header {
     background-color: #0e89d5;
@@ -121,11 +153,13 @@ footer {
     margin-bottom: 10px;
 }
 
-#wind-compass {
-    transform: rotate(225deg);
-    width: 30%;
-    height: auto;
-}
+#dial {
+    height: 150px;
+    width: 150px;
+    background: no-repeat center/85% url(../images/wind-pointer.png);
+    z-index: 100;
+    margin: -.6em auto 0;
+   }
 
 #mph-compass {
     position: relative;
@@ -233,10 +267,7 @@ nav a {
         background-size: cover;
     }
 
-    #wind-compass {
-        width: 50%;
-        height: auto;
-    }
+
 
     #mph-compass {
         position: relative;
