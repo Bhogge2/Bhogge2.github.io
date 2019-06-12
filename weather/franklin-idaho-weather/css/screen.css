@@ -118,14 +118,14 @@ footer {
     text-align: center;
 }
 
-#background-container {
+#currentWeather {
     z-index: -1;
-    background-image: url(../images/rain-400.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.middle-tile, .tile {
+.middle-tile,
+.tile {
     background-color: rgba(200, 200, 200, 0.6);
     margin: .2em auto;
     border: 1px solid;
@@ -159,7 +159,7 @@ footer {
     background: no-repeat center/85% url(../images/wind-pointer.png);
     z-index: 100;
     margin: -.6em auto 0;
-   }
+}
 
 #mph-compass {
     position: relative;
@@ -234,6 +234,27 @@ nav a {
     text-decoration: none;
 }
 
+/* Different Weather Conditions */
+.clear {
+    background-image: url(../images/clear-400.jpg);
+}
+
+.rain {
+    background-image: url(../images/rain-400.jpg);
+}
+
+.snow {
+    background-image: url(../images/snow-267.jpg);
+}
+
+.clouds {
+    background-image: url(../images/clouds-400.jpg);
+}
+
+.fog {
+    background-image: url(../images/fog-400.jpg);
+}
+
 /* 4. Large Screen Rules */
 @media screen and (min-width: 800px) {
 
@@ -260,9 +281,8 @@ nav a {
         margin-bottom: 10px;
     }
 
-    #background-container {
+    #currentWeather {
         display: flex;
-        background-image: url(../images/rain-1200.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -280,8 +300,30 @@ nav a {
         margin-bottom: 20px;
         margin-top: 20px;
     }
+
     footer {
         background-color: white;
         border-top: 3px solid;
+    }
+
+    /* Different Weather Conditions */
+    .clear {
+        background-image: url(../images/clear-1200.jpg);
+    }
+
+    .rain {
+        background-image: url(../images/rain-1200.jpg);
+    }
+
+    .snow {
+        background-image: url(../images/snow-800.jpg);
+    }
+
+    .clouds {
+        background-image: url(../images/clouds-900.jpg);
+    }
+
+    .fog {
+        background-image: url(../images/fog-1200.jpg);
     }
 }

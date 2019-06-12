@@ -1,13 +1,27 @@
 /* *************************************
-*  Weather Site JavaScript Functions
-************************************* */
+ *  Weather Site JavaScript Functions
+ ************************************* */
 
 // Variables for Function Use
+
+// Feels like temp
 const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
+
+// Wind dial direction
 const direction = "NNE";
 windDial(direction);
+
+// Changes background image
+const condition = "Partly cloudy";
+const newCondition = getCondition(condition);
+changeSummaryImage(newCondition);
+
+// Converts meters to feet
+const meters = 1514.246;
+convertMeters(meters);
+
 
 // Calculate the Windchill
 function buildWC(speed, temp) {
@@ -18,7 +32,7 @@ function buildWC(speed, temp) {
     // Round the answer down to integer
     wc = Math.floor(wc);
     // If chill is greater than temp, return the temp
-    wc = (wc > temp)?temp:wc;
+    wc = (wc > temp) ? temp : wc;
     // Display the windchill
     console.log(wc);
     wc = 'Feels like ' + wc + '&deg;F';
@@ -31,41 +45,111 @@ function windDial(direction) {
     const dial = document.getElementById("dial");
     // Determine the dial class
     switch (direction) {
+        // North
         case "North":
         case "N":
             dial.setAttribute("class", "n");
             break;
+        // Northeast
         case "NE":
         case "NNE":
         case "ENE":
             dial.setAttribute("class", "ne");
             break;
+        // Northwest
         case "NW":
         case "NNW":
         case "WNW":
             dial.setAttribute("class", "nw");
             break;
+        // South
         case "South":
         case "S":
             dial.setAttribute("class", "s");
             break;
+        // Southeast
         case "SE":
         case "SSE":
         case "ESE":
             dial.setAttribute("class", "se");
             break;
+        // Southwest
         case "SW":
         case "SSW":
         case "WSW":
             dial.setAttribute("class", "sw");
             break;
+        // East
         case "E":
         case "East":
             dial.setAttribute("class", "e");
             break;
+        // West
         case "W":
         case "West":
             dial.setAttribute("class", "w");
             break;
     }
+}
+
+// Get the weather condition
+function getCondition(condition) {
+    // Check the condition passed in
+    console.log(condition);
+    // Determine the currentWeather class based on what is in the string
+    switch (true) {
+        // Clear
+        case (condition.includes("clear") || condition.includes("sun")):
+            return "clear";
+        // Rain
+        case (condition.includes("wet") || condition.includes("rain")):
+            return "rain";
+        // Clouds
+        case (condition.includes("cloud")):
+            return "clouds";
+        // Snow
+        case (condition.includes("snow")):
+            return "snow";
+        // Fog
+        case (condition.includes("fog")):
+            return "fog";
+        default :
+            return "clear";
+    }
+}
+
+function changeSummaryImage(newCondition) {
+    // Checks the weather condition
+    console.log(newCondition);
+
+    // changes the class depending on the condition
+    switch (newCondition) {
+        // Clear
+        case "clear": currentWeather.setAttribute("class", "clear");
+        break;
+        // Rain
+        case "rain": currentWeather.setAttribute("class", "rain");
+        break;
+        // Clouds
+        case "clouds": currentWeather.setAttribute("class", "clouds");
+        break;
+        // Snow
+        case "snow": currentWeather.setAttribute("class", "snow");
+        break;
+        // Fog
+        case "fog": currentWeather.setAttribute("class", "fog");
+        break;
+    }
+}
+
+function convertMeters(meters) {
+    // Convert to feet
+    let feet = meters * 3.28084;
+    // Checks before rounding
+    console.log(feet);
+    // Rounds to nearest integer
+    feet = Math.round(feet);
+
+    return feet;
+
 }
