@@ -5,22 +5,27 @@
 // Variables for Function Use
 
 // Feels like temp
-const temp = 31;
-const speed = 5;
+let temp = 31;
+let speed = 5;
 buildWC(speed, temp);
 
 // Wind dial direction
-const direction = "NNE";
+let direction = "NNE";
 windDial(direction);
 
 // Changes background image
-const condition = "Partly cloudy";
-const newCondition = getCondition(condition);
+let condition = "Partly cloudy";
+let newCondition = getCondition(condition);
 changeSummaryImage(newCondition);
 
 // Converts meters to feet
-const meters = 1514.246;
-convertMeters(meters);
+let meters = 1514.246;
+convertMetersToFeet(meters);
+
+// Change elevation to feet
+const elevationFeet = convertMetersToFeet(meters);
+convertElevation(elevationFeet);
+
 
 
 // Calculate the Windchill
@@ -142,7 +147,7 @@ function changeSummaryImage(newCondition) {
     }
 }
 
-function convertMeters(meters) {
+function convertMetersToFeet(meters) {
     // Convert to feet
     let feet = meters * 3.28084;
     // Checks before rounding
@@ -151,5 +156,9 @@ function convertMeters(meters) {
     feet = Math.round(feet);
 
     return feet;
+}
 
+function convertElevation(elevationFeet) {
+    // Input feet into HTML
+    elevationHeight.innerHTML = elevationFeet;
 }
