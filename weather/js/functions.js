@@ -23,14 +23,14 @@ let meters = 1514.246;
 convertMetersToFeet(meters);
 
 // Change elevation to feet
-const elevationFeet = convertMetersToFeet(meters);
+let elevationFeet = convertMetersToFeet(meters);
 convertElevation(elevationFeet);
 
 
 
 // Calculate the Windchill
 function buildWC(speed, temp) {
-    const feelsLike = document.getElementById('feelsTemp');
+    let feelsLike = document.getElementById('feelsTemp');
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
     console.log(wc);
@@ -47,7 +47,7 @@ function buildWC(speed, temp) {
 // Wind Dial Function
 function windDial(direction) {
     // Get the container
-    const dial = document.getElementById("dial");
+    let dial = document.getElementById("dial");
     // Determine the dial class
     switch (direction) {
         // North
@@ -161,4 +161,9 @@ function convertMetersToFeet(meters) {
 function convertElevation(elevationFeet) {
     // Input feet into HTML
     elevationHeight.innerHTML = elevationFeet;
+}
+
+// Convert, Format time to 12 hour format
+function format_time(hour) {
+
 }
