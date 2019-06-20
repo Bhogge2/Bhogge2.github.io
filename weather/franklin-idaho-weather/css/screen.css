@@ -28,6 +28,10 @@ body {
     font-size: 20px;
 }
 
+.hide{
+    display: none;
+  }
+
 h1,
 h2,
 h3,
@@ -265,12 +269,25 @@ nav a {
     }
 
     header {
-        background-color: white;
+        background-color: #0e89d5;
+        display: flex;
+        align-items: center;
+    }
+
+    #site-brand {
+        padding-left: 20px;
+    }
+    
+    .middle-tile {
+        width: 30%;
     }
 
     nav {
         position: static;
-        background-color: white;
+    }
+
+    #logo {
+        height: 80px;
     }
 
     nav a {
@@ -286,9 +303,6 @@ nav a {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-
-
     #mph-compass {
         position: relative;
         bottom: 80px;
@@ -302,7 +316,7 @@ nav a {
     }
 
     footer {
-        background-color: white;
+        background-color: #0e89d5;
         border-top: 3px solid;
     }
 

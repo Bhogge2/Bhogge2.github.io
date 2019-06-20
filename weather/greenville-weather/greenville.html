@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Franklin, ID | Weather Site</title>
-    <meta name="description" content="Weather site for Franklin, Idaho.">
+    <title id="pageTitle">Franklin, ID | Weather Site</title>
+    <meta name="description" content="Weather site for Greenville">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="../franklin-idaho-weather/css/screen.css" media="screen">
 </head>
@@ -15,17 +15,18 @@
             <img id="logo" src="../franklin-idaho-weather/images/logo.jpg" alt="weather site logo">
             <span id="site-brand"><strong>The Weather Site</strong></span>
         </header>
-        <nav>
+        <nav id = "pageNav">
             <ul>
                 <li><a href="#" title="Go to the Weather Site home page">Current</a></li>
                 <li><a href="#" title="Open a search bar">Search</a></li>
-                <li><a href="../franklin-idaho-weather/franklin-idaho-weather.html" title="Go to the Franklin Weather Site page">Franklin</a></li>
+                <li><a href="../weather/franklin-idaho-weather/franklin-idaho-weather.html" title="Go to the Franklin Weather Site page">Franklin</a></li>
                 <li><a href="../greenville-weather/greenville.html" title="Go to the Greenville Weather Site page">Greenville</a></li>
             </ul>
         </nav>
-        <main>
+        <section id="status">Please be patient while I get your weather information.</section>
+        <main id = "mainContent" class = "hide">
             <section id="location-info">
-                <h1>Franklin, Idaho</h1>
+                <h1 id = "contentHeading">Franklin, Idaho</h1>
 
                 <span id="zip"><strong>Zip:</strong> 83237 |</span>
                 <span id="elevation"><strong>Elevation:</strong> <span id = "elevationHeight"></span> ft. | </span>
@@ -46,13 +47,13 @@
                     <section id="wind" class="middle-tile">
                         <h2>Wind</h2>
                         <div id="dial" class="w"></div>
-                        <p id="mph-compass">5 mph</p>
-                        <p id="wind-direction"><strong>Direction</strong>: SW</p>
-                        <p id="wind-gusts"><strong>Gusts</strong>: 10-12mph</p>
+                        <p id="mph-compass"><span id = 'windSpeed'>5</span> mph</p>
+                        <p id="wind-direction"><strong>Direction</strong>: <span id = 'direction'>SW</span></p>
+                        <p id="wind-gusts"><strong>Gusts</strong>: <span id = 'gusts'>10-12mph</span></p>
                     </section>
 
                     <section id="sky" class="middle-tile">
-                        <h2>Rain</h2>
+                        <h2 id = 'summary'>Rain</h2>
                         <section id="sky-box"></section>
                     </section>
                 </section>
@@ -61,19 +62,19 @@
             <section id="forecast" class="tile">
                 <h2>Hourly Forecast</h2>
                 <ul>
-                    <li id="10am">10am: 41&deg;F | </li>
-                    <li id="11am">11am: 41&deg;F | </li>
-                    <li id="12am">12pm: 41&deg;F | </li>
-                    <li id="1pm">1pm: 41&deg;F | </li>
-                    <li id="2pm">2pm: 41&deg;F | </li>
-                    <li id="3pm">3pm: 41&deg;F | </li>
-                    <li id="4pm">4pm: 42&deg;F | </li>
-                    <li id="5pm">5pm: 44&deg;F | </li>
-                    <li id="6pm">6pm: 44&deg;F | </li>
-                    <li id="7pm">7pm: 46&deg;F | </li>
-                    <li id="8pm">8pm: 49&deg;F | </li>
-                    <li id="9pm">9pm: 51&deg;F | </li>
-                    <li id="10pm">10pm: 55&deg;F </li>
+                    <li>10am: <span id = "12am"></span>&deg;F | </li>
+                    <li>11am: <span id = "1am"></span>&deg;F | </li>
+                    <li>12pm: <span id = "2am"></span>&deg;F | </li>
+                    <li>1pm: <span id = "3am"></span>&deg;F | </li>
+                    <li>2pm: <span id = "4am"></span>&deg;F | </li>
+                    <li>3pm: <span id = "5am"></span>&deg;F | </li>
+                    <li>4pm: <span id = "6am"></span>&deg;F | </li>
+                    <li>5pm: <span id = "7am"></span>&deg;F | </li>
+                    <li>6pm: <span id = "8am"></span>&deg;F | </li>
+                    <li>7pm: <span id = "9am"></span>&deg;F | </li>
+                    <li>8pm: <span id = "10am"></span>&deg;F | </li>
+                    <li>9pm: <span id = "11am"></span>&deg;F | </li>
+                    <li>10pm: <span id = "12pm"></span>&deg;F </li>
                 </ul>
             </section>
         </main>
@@ -81,7 +82,9 @@
             &copy;2019, The Weather Site
         </footer>
     </div>
+    <script src = "../js/weather.json"></script>
     <script src="../js/functions.js"></script>
+    <script src = "../js/localData.js"></script>
 </body>
 
 </html>
