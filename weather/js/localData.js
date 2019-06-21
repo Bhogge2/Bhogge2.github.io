@@ -148,11 +148,11 @@ function fetchData(weatherURL){
     let inputElevation = document.getElementById('elevationHeight');
     inputElevation.innerHTML = elevation;
 
-    let inputLatitude = document.getElementById();
+    let inputLatitude = document.getElementById('latitude');
     inputLatitude.innerHTML = latitude;
 
-    let inputLongitude = document.getElementById();
-    inputLongitude.innerHTML = latitude;
+    let inputLongitude = document.getElementById('longitude');
+    inputLongitude.innerHTML = longitude;
 
 
 
