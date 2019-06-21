@@ -40,16 +40,19 @@ function fetchData(weatherURL){
     let high = g.High;
     let low = g.Low;
     let temp = g.Temp;
+    console.log(high);
 
     // Get the wind data 
     let wind = g.Wind;
     let direction = g.Direction;
     let gusts = g.Gusts;
+    console.log(wind);
 
 
     // Get the current conditions
     let summary = g.Summary;
     let precip = g.Precip;
+    console.log(summary);
 
     // Get the hourly data 
     let twelveAM = g.Hourly[0];
@@ -65,12 +68,14 @@ function fetchData(weatherURL){
     let tenAM = g.Hourly[10];
     let elevenAM = g.Hourly[11];
     let twelvePM = g.Hourly[12];
+    console.log(fourAM);
 
     //Get zip code, elevation and location
     let zip = g.Zip;
     let elevation = g.Elevation;
     let latitude = g.Latitude;
     let longitude = g.Longitude;
+    console.log(zip);
 
 
     // ************ Display the content ******************************
@@ -79,6 +84,7 @@ function fetchData(weatherURL){
     let pageTitle = document.getElementById('pageTitle');
     // Create a text node containing the full name 
     let fullNameNode = document.createTextNode(fullName);
+    console.log(fullName);
     // inserts the fullName value before any other content that might exist
     pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
     // When this is done the title should look something like this:
@@ -159,8 +165,6 @@ function fetchData(weatherURL){
     inputLongitude.innerHTML = longitude;
 
     convertMetersToFeet(elevation);
-
-
 
     // Change the status of the containers
     contentContainer.setAttribute('class', ''); // removes the hide class
