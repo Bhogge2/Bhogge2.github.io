@@ -66,6 +66,12 @@ function fetchData(weatherURL){
     let elevenAM = g.Hourly[11];
     let twelvePM = g.Hourly[12];
 
+    //Get zip code, elevation and location
+    let zip = g.Zip;
+    let elevation = g.Elevation;
+    let latitude = g.Latitude;
+    let longitude = g.Longitude;
+
 
     // ************ Display the content ******************************
     // Set the title with the location name at the first
@@ -134,6 +140,21 @@ function fetchData(weatherURL){
     inputElevenAM.innerHTML = elevenAM;
     let inputTwelvePM = document.getElementById('12pm');
     inputTwelvePM.innerHTML = twelvePM;
+
+    // Set location, zip and elevation
+    let inputZip = document.getElementById('zipData');
+    inputZip.innerHTML = zip;
+
+    let inputElevation = document.getElementById('elevationHeight');
+    inputElevation.innerHTML = elevation;
+
+    let inputLatitude = document.getElementById();
+    inputLatitude.innerHTML = latitude;
+
+    let inputLongitude = document.getElementById();
+    inputLongitude.innerHTML = latitude;
+
+
 
     // Change the status of the containers
     contentContainer.setAttribute('class', ''); // removes the hide class

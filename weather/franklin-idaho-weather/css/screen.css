@@ -305,9 +305,9 @@ nav a {
     }
     #mph-compass {
         position: relative;
-        bottom: 80px;
+        bottom: 100px;
         z-index: 2;
-        margin-bottom: -55px;
+        margin-bottom: -70px;
     }
 
     #forecast {
