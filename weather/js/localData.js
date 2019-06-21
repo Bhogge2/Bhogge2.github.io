@@ -2,13 +2,13 @@
 
 
 let weatherURL = "C:\Users\bradf\OneDrive\Bhogge2.github.io\weather\js\weather.json";
-fetchData(weatherURL);
+
 // Set variable equal to elements
 let pageNav = document.getElementById('pageNav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('mainContent');
 
-
+fetchData(weatherURL);
 
 function fetchData(weatherURL){
   let cityName = 'Greenville'; // The data we want from the weather.json file
