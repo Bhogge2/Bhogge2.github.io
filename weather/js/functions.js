@@ -4,32 +4,32 @@
 
 // Variables for Function Use
 
-// Feels like temp
-let temp = 31;
-let speed = 5;
-buildWC(speed, temp);
+// // Feels like temp
+// let temp = 31;
+// let speed = 5;
+// buildWC(speed, temp);
 
-// Wind dial direction
-let direction = "NNE";
-windDial(direction);
+// // Wind dial direction
+// let direction = "NNE";
+// windDial(direction);
 
-// Changes background image
-let condition = "Partly cloudy";
-let newCondition = getCondition(condition);
-changeSummaryImage(newCondition);
+// // Changes background image
+// let condition = "Partly cloudy";
+// let newCondition = getCondition(condition);
+// changeSummaryImage(newCondition);
 
-// Converts meters to feet
-let meters = 1514.246;
-convertMetersToFeet(meters);
+// // Converts meters to feet
+// let meters = 1514.246;
+// convertMetersToFeet(meters);
 
-// Change elevation to feet
-let elevationFeet = convertMetersToFeet(meters);
-convertElevation(elevationFeet);
+// // Change elevation to feet
+// let elevationFeet = convertMetersToFeet(meters);
+// convertElevation(elevationFeet);
 
-// Hourly Temperature
-// Get the next hour based on the current time
-let date = new Date(); 
-let nextHour = date.getHours() + 1;
+// // Hourly Temperature
+// // Get the next hour based on the current time
+// let date = new Date(); 
+// let nextHour = date.getHours() + 1;
 
 
 
@@ -112,7 +112,7 @@ function getCondition(condition) {
         case (condition.includes("clear") || condition.includes("sun")):
             return "clear";
         // Rain
-        case (condition.includes("wet") || condition.includes("rain")):
+        case (condition.includes("wet") || condition.includes("rain") || condition.includes("storm")):
             return "rain";
         // Clouds
         case (condition.includes("cloud")):
@@ -136,18 +136,23 @@ function changeSummaryImage(newCondition) {
     switch (newCondition) {
         // Clear
         case "clear": currentWeather.setAttribute("class", "clear");
+        skyBox.setAttribute("class", "clear");
         break;
         // Rain
         case "rain": currentWeather.setAttribute("class", "rain");
+        skyBox.setAttribute("class", "rain");
         break;
         // Clouds
         case "clouds": currentWeather.setAttribute("class", "clouds");
+        skyBox.setAttribute("class", "clouds");
         break;
         // Snow
         case "snow": currentWeather.setAttribute("class", "snow");
+        skyBox.setAttribute("class", "snow");
         break;
         // Fog
         case "fog": currentWeather.setAttribute("class", "fog");
+        skyBox.setAttribute("class", "fog");
         break;
     }
 }
@@ -160,7 +165,7 @@ function convertMetersToFeet(meters) {
     // Rounds to nearest integer
     feet = Math.round(feet);
 
-    return feet;
+    elevationHeight.innerHTML = feet;
 }
 
 function convertElevation(elevationFeet) {

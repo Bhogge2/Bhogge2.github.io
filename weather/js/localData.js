@@ -107,10 +107,14 @@ function fetchData(weatherURL){
     let windSpeed = document.getElementById('windSpeed');
     windSpeed.innerHTML = wind;
 
+    buildWC(wind, temp);
 
     // Set the current conditions information
     let inputSummary = document.getElementById('summary');
     inputSummary.innerHTML = summary;
+
+    let newCondition = getCondition(summary);
+    changeSummaryImage(newCondition);
 
 
     // Set the hourly temperature information
@@ -153,6 +157,8 @@ function fetchData(weatherURL){
 
     let inputLongitude = document.getElementById('longitude');
     inputLongitude.innerHTML = longitude;
+
+    convertMetersToFeet(elevation);
 
 
 
