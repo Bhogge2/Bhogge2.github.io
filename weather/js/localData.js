@@ -113,7 +113,12 @@ function fetchData(weatherURL){
     let windSpeed = document.getElementById('windSpeed');
     windSpeed.innerHTML = wind;
 
+    // Run wind chill function
     buildWC(wind, temp);
+
+    // Run compass direction function
+    windDial(direction);
+
 
     // Set the current conditions information
     let inputSummary = document.getElementById('summary');

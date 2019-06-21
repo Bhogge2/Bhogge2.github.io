@@ -239,6 +239,10 @@ nav a {
     text-decoration: none;
 }
 
+footer {
+    margin-bottom: 70px;
+}
+
 /* Different Weather Conditions */
 .clear {
     background-image: url(../images/clear-400.jpg);
@@ -280,7 +284,7 @@ nav a {
     }
     
     .middle-tile {
-        width: 30%;
+        width: 33%;
     }
 
     nav {
@@ -306,7 +310,7 @@ nav a {
     }
     #mph-compass {
         position: relative;
-        bottom: 100px;
+        bottom: 105px;
         z-index: 2;
         margin-bottom: -70px;
     }
@@ -319,6 +323,7 @@ nav a {
     footer {
         background-color: #0e89d5;
         border-top: 3px solid;
+        margin-bottom: 0px;
     }
 
     /* Different Weather Conditions */
