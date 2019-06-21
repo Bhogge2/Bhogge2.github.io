@@ -5,7 +5,7 @@
 let pageNav = document.getElementById('pageNav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('mainContent');
-let weatherURL = "https://Bhogge2.github.io/weather/js/weather.json";
+let weatherURL = "/weather/js/weather.json";
 
 fetchData(weatherURL);
 
@@ -99,17 +99,17 @@ function fetchData(weatherURL){
 
     // Set the temperature information
     let currentTemp = document.getElementById('current-temp');
-    currentTemp.innerHTML = temp;
+    currentTemp.innerHTML = temp + "&deg;F";
     let highTemp = document.getElementById('daily-high');
-    highTemp.innerHTML = high;
+    highTemp.innerHTML = high + "&deg;F";
     let lowTemp = document.getElementById('daily-low');
-    lowTemp.innerHTML = low;
+    lowTemp.innerHTML = low + "&deg;F";
 
     // Set the wind information
     let windDirection = document.getElementById('direction');
     windDirection.innerHTML = direction;
     let windGusts = document.getElementById('gusts');
-    windGusts.innerHTML = gusts;
+    windGusts.innerHTML = gusts + "mph";
     let windSpeed = document.getElementById('windSpeed');
     windSpeed.innerHTML = wind;
 

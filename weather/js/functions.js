@@ -106,22 +106,24 @@ function windDial(direction) {
 function getCondition(condition) {
     // Check the condition passed in
     console.log(condition);
+    // Make all lowercase
+    let lowerCondition = condition.toLowerCase();
     // Determine the currentWeather class based on what is in the string
     switch (true) {
         // Clear
-        case (condition.includes("clear") || condition.includes("sun")):
+        case (lowerCondition.includes("clear") || lowerCondition.includes("sun")):
             return "clear";
         // Rain
-        case (condition.includes("wet") || condition.includes("rain") || condition.includes("storm")):
+        case (lowerCondition.includes("wet") || lowerCondition.includes("rain") || lowerCondition.includes("storm")):
             return "rain";
         // Clouds
-        case (condition.includes("cloud")):
+        case (lowerCondition.includes("cloud")):
             return "clouds";
         // Snow
-        case (condition.includes("snow")):
+        case (lowerCondition.includes("snow")):
             return "snow";
         // Fog
-        case (condition.includes("fog")):
+        case (lowerCondition.includes("fog")):
             return "fog";
         default :
             return "clear";
