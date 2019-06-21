@@ -1,12 +1,11 @@
 "use strict";
 
 
-let weatherURL = "C:\Users\bradf\OneDrive\Bhogge2.github.io\weather\js\weather.json";
-
 // Set variable equal to elements
 let pageNav = document.getElementById('pageNav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('mainContent');
+let weatherURL = "https://Bhogge2.github.io/weather/js/weather.json";
 
 fetchData(weatherURL);
 
@@ -71,7 +70,7 @@ function fetchData(weatherURL){
     // ************ Display the content ******************************
     // Set the title with the location name at the first
     // Gets the title element so it can be worked with
-    let pageTitle = document.getElementById('page-title');
+    let pageTitle = document.getElementById('pageTitle');
     // Create a text node containing the full name 
     let fullNameNode = document.createTextNode(fullName);
     // inserts the fullName value before any other content that might exist
