@@ -114,7 +114,7 @@ function getCondition(condition) {
         case (lowerCondition.includes("clear") || lowerCondition.includes("sun")):
             return "clear";
         // Rain
-        case (lowerCondition.includes("wet") || lowerCondition.includes("rain") || lowerCondition.includes("storm")):
+        case (lowerCondition.includes("wet") || lowerCondition.includes("rain") || lowerCondition.includes("storm") || lowerCondition.include("shower")):
             return "rain";
         // Clouds
         case (lowerCondition.includes("cloud")):
