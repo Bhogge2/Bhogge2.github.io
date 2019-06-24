@@ -239,6 +239,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    cursor: pointer;
+    color: white;
+}
+
 footer {
     margin-bottom: 70px;
 }
