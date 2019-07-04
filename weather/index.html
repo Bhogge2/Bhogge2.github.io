@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="pageTitle"> | Weather Site</title>
+    <meta name="description" content="Weather site for Greenville">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="../weather/franklin-idaho-weather/css/screen.css" media="screen">
+</head>
+
+<body>
+    <div>
+        <header>
+            <img id="logo" src="../weather/franklin-idaho-weather/images/logo.jpg" alt="weather site logo">
+            <span id="site-brand"><strong>The Weather Site</strong></span>
+        </header>
+        <nav id = "pageNav">
+            <ul>
+                <li><a href="#" title="Go to your weather of your current location">Current</a></li>
+                <li><a href="#" title="Open a search bar">Search</a></li>
+                <li><a href="https://bhogge2.github.io/weather/franklin-idaho-weather/franklin-idaho-weather.html" title="Go to the Franklin Weather Site page">Franklin</a></li>
+                <li><a href="https://bhogge2.github.io/weather/greenville-weather/greenville.html" title="Go to the Greenville Weather Site page">Greenville</a></li>
+                <li><a href= "" title="Go to the Springfield Weather Site page">Springfield</a></li>
+            </ul>
+        </nav>
+        <p id="status"></p>
+        <main id = "mainContent" class = "hide">
+            <section id="location-info">
+                <h1 id = "contentHeading"></h1>
+
+                <span id="zip"><strong>Zip:</strong> none <span id = "zipData"></span> |</span>
+                <span id="elevation"><strong>Elevation:</strong> <span id = "elevationHeight"></span> ft. | </span>
+                <span id="location"><strong>Location: </strong><span id = "latitude"></span>&deg; N, <span id = "longitude"></span>&deg; W</span>
+            </section>
+
+            <section class="middle-boxes">
+                <section id="currentWeather" class= "">
+
+                    <section id="temperature" class="middle-tile">
+                        <h2>Temperature</h2>
+                        <p id="current-temp"><strong></strong></p>
+                        <span id="daily-high"></span>
+                        <span id="daily-low"></span>
+                        <p id="feelsTemp"></p>
+                    </section>
+
+                    <section id="wind" class="middle-tile">
+                        <h2>Wind</h2>
+                        <div id="dial" class=""></div>
+                        <p id="mph-compass"><span id = 'windSpeed'></span> mph</p>
+                        <p id="wind-direction"><strong>Direction</strong>: <span id = 'direction'></span></p>
+                        <p id="wind-gusts"><strong>Gusts</strong>: <span id = 'gusts'></span></p>
+                    </section>
+
+                    <section id="sky" class="middle-tile">
+                        <h2 id = 'summary'></h2>
+                        <section id="skyBox"></section>
+                    </section>
+                </section>
+            </section>
+
+            <section id="forecast" class="tile">
+                <h2>Hourly Forecast</h2>
+                <ul>
+                    <li><span id = "hour1"></span>: <span id = "hourOne"></span>&deg;F | </li>
+                    <li><span id = "hour2"></span>: <span id = "hourTwo"></span>&deg;F | </li>
+                    <li><span id = "hour3"></span>: <span id = "hourThree"></span>&deg;F | </li>
+                    <li><span id = "hour4"></span>: <span id = "hourFour"></span>&deg;F | </li>
+                    <li><span id = "hour5"></span>: <span id = "hourFive"></span>&deg;F | </li>
+                    <li><span id = "hour6"></span>: <span id = "hourSix"></span>&deg;F | </li>
+                    <li><span id = "hour7"></span>: <span id = "hourSeven"></span>&deg;F | </li>
+                    <li><span id = "hour8"></span>: <span id = "hourEight"></span>&deg;F | </li>
+                    <li><span id = "hour9"></span>: <span id = "hourNine"></span>&deg;F | </li>
+                    <li><span id = "hour10"></span>: <span id = "hourTen"></span>&deg;F | </li>
+                    <li><span id = "hour11"></span>: <span id = "hourEleven"></span>&deg;F | </li>
+                    <li><span id = "hour12"></span>: <span id = "hourTwelve"></span>&deg;F | </li>
+                    <li><span id = "hour13"></span>: <span id = "hourThirteen"></span>&deg;F   </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            &copy;2019, The Weather Site
+        </footer>
+    </div>
+    <script src="../weather/js/functions.js"></script>
+    <script src = "../weather/js/geo_loc.js"></script>
+</body>
+
+</html>

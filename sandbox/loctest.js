@@ -12,7 +12,7 @@ var idHeader = {
     }
 };
 
-let storage = window.localStorage;
+var storage = window.localStorage;
 
 
 // Call the function to get our location
@@ -117,23 +117,21 @@ function getWeather(stationId) {
             console.log(data);
 
             // Store weather information to localStorage 
+            storage.setItem("shortLat", data.geometry.coordinates[0].toFixed(2));
+            storage.setItem("shortLon", data.geometry.coordinates[1].toFixed(2));
+            storage.setItem("temp", data.properties.temperature.value.toFixed(2));
+            storage.setItem("high", data.properties.maxTemperatureLast24Hours.value.toFixed(2));
+            storage.setItem("low", data.properties.minTemperatureLast24Hours.value.toFixed(2));
+            storage.setItem("precip", data.properties.precipitationLastHour.value.toFixed(2));
+            storage.setItem("windDirection", data.properties.windDirection.value);
+            storage.setItem("wind", data.properties.windSpeed.value);
+            storage.setItem("gusts", data.properties.windGust.value);
+            storage.setItem("summary", data.properties.textDescription);
+            storage.setItem("elevation", data.properties.elevation.value);
 
             // Build the page for viewing 
-
+            
         })
         .catch(error => console.log('There was a getWeather error: ', error))
 } // end getWeather function
-// "City": "Springfield",
-//      "State": "IL",
-//      "High": 77,
-//      "Low": 48,
-//      "Temp": 62,
-//      "Precip": 0,
-//      "Wind": "5",
-//      "Direction": "NW",
-//      "Gusts": "5-10",
-//      "Summary": "Partly Cloudy",
-//      "Longitude": -89.680832,
-//      "Latitude": 39.763908,
-//      "Elevation": 170,
-//      "Zip": 62701,
+

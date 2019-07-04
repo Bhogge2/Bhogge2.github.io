@@ -95,6 +95,10 @@ let weatherURL = "/weather/js/weather.json";
     // Set the title with the location name at the first
     // Gets the title element so it can be worked with
     let pageTitle = document.getElementById('pageTitle');
+    // if there is already a node there, remove it
+    if (pageTitle.childNodes.length > 1) {
+    pageTitle.childNodes[0].remove();
+    }
     // Create a text node containing the full name 
     let fullNameNode = document.createTextNode(fullName);
     console.log(fullName);
