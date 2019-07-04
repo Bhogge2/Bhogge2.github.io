@@ -251,6 +251,7 @@ footer {
 /* Different Weather Conditions */
 .clear {
     background-image: url(../images/clear-400.jpg);
+    background-position-x: -600px;
 }
 
 .rain {

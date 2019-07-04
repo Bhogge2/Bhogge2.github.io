@@ -297,9 +297,7 @@ function getWeather(stationId) {
             // Store weather information to localStorage 
             storage.setItem("shortLat", data.geometry.coordinates[0].toFixed(2));
             storage.setItem("shortLon", data.geometry.coordinates[1].toFixed(2));
-            storage.setItem("temp", data.properties.temperature.value);
             storage.setItem("wind", data.properties.windSpeed.value);
-            storage.setItem("summary", data.properties.textDescription);
             storage.setItem("elevation", data.properties.elevation.value);
 
             buildPage(); 
@@ -324,7 +322,6 @@ function getForecast(forecastURL) {
             console.log(data);
 
             // Storing different weather data in the local storage
-            storage.setItem("windDirection", data.properties.periods[0].windDirection);
             storage.setItem("gusts", data.properties.periods[0].windSpeed);
             if (data.properties.periods[0].temperature > data.properties.periods[1].temperature) {
                 storage.setItem("high", data.properties.periods[0].temperature)
@@ -388,6 +385,15 @@ function getHourlyForecast(hourlyForecastURL) {
             storage.setItem("hour11", format_time((ct.getHours() + 10)));
             storage.setItem("hour12", format_time((ct.getHours() + 11)));
             storage.setItem("hour13", format_time((ct.getHours() + 12)));
+
+            // Get direction
+            storage.setItem("windDirection", data.properties.periods[0].windDirection);
+
+            // Gets current temp
+            storage.setItem("temp", data.properties.periods[0].temperature);
+
+            // Get summary
+            storage.setItem("summary", data.properties.periods[0].shortForecast);
         })
         .catch(error => console.log('There was a getHourlyForecast error: ', error))
 }
@@ -487,9 +493,9 @@ function buildPage() {
     document.getElementById('windSpeed').innerHTML = Math.round(wind);
 
     // Run celsius to fahrenheit function
-    document.getElementById('current-temp').innerHTML = (convertCelsiusToFahrenheit(temp)) + '&deg;F';
+    document.getElementById('current-temp').innerHTML = temp + '&deg;F';
     // Run the Wind Chill function
-    buildWC(wind, convertCelsiusToFahrenheit(temp));
+    buildWC(wind, temp);
 
     // Run Wind Dial function
     windDial(direction);
