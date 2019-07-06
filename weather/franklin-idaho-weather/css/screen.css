@@ -237,6 +237,7 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 nav a:hover {
@@ -303,6 +304,7 @@ footer {
 
     nav a {
         color: black;
+        font-size: 1.2em;
     }
 
     #location-info {
@@ -335,6 +337,7 @@ footer {
     /* Different Weather Conditions */
     .clear {
         background-image: url(../images/clear-1200.jpg);
+        background-position-x: 0px;
     }
 
     .rain {
