@@ -28,9 +28,9 @@ body {
     font-size: 20px;
 }
 
-.hide{
+.hide {
     display: none;
-  }
+}
 
 h1,
 h2,
@@ -89,7 +89,7 @@ footer {
 
 /* Header */
 #site-brand {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 600;
 }
 
@@ -114,7 +114,7 @@ footer {
 #zip,
 #location,
 #elevation {
-    font-size: 0.75em;
+    font-size: 0.7em;
 }
 
 /* middle boxes */
@@ -186,7 +186,7 @@ footer {
     width: 200px;
     margin: auto;
     margin-bottom: 10px;
-    
+
 }
 
 /* forecast tile */
@@ -288,8 +288,15 @@ footer {
 
     #site-brand {
         padding-left: 20px;
+        font-size: 2.5em;
     }
-    
+
+    #zip,
+    #location,
+    #elevation {
+        font-size: 1em;
+    }
+
     .middle-tile {
         width: 33%;
     }
@@ -316,6 +323,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     #mph-compass {
         position: relative;
         bottom: 105px;
