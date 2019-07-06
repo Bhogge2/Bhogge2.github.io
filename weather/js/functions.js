@@ -236,6 +236,8 @@ function getLocation(locale) {
             // URL for forecast and hourly forecast
             let forecastURL = data.properties.forecast;
             let hourlyForecastURL = data.properties.forecastHourly;
+            console.log(forecastURL);
+            console.log(hourlyForecastURL);
 
             // Call getForecast to get more data
             getForecast(forecastURL);
@@ -300,6 +302,7 @@ function getWeather(stationId) {
             storage.setItem("wind", data.properties.windSpeed.value);
             storage.setItem("elevation", data.properties.elevation.value);
 
+            // Run the function that inputs the data into the page
             buildPage(); 
 
         })
@@ -323,6 +326,7 @@ function getForecast(forecastURL) {
 
             // Storing different weather data in the local storage
             storage.setItem("gusts", data.properties.periods[0].windSpeed);
+            // Determine high or low by seeing if it is day or night time
             if (data.properties.periods[0].temperature > data.properties.periods[1].temperature) {
                 storage.setItem("high", data.properties.periods[0].temperature)
                 storage.setItem("low", data.properties.periods[1].temperature)
@@ -334,6 +338,7 @@ function getForecast(forecastURL) {
         .catch(error => console.log('There was a getForecast error: ', error))
 }
 
+// Gets the hourly forecast object and read the data from it
 function getHourlyForecast(hourlyForecastURL) {
     fetch(hourlyForecastURL, idHeader)
         .then(function (response) {
@@ -347,6 +352,7 @@ function getHourlyForecast(hourlyForecastURL) {
             console.log('From getHourlyForecast function:');
             console.log(data);
 
+            // Setting the temperatures into the local storage for the next 13 hours
             storage.setItem("hourOne", data.properties.periods[0].temperature);
             storage.setItem("hourTwo", data.properties.periods[1].temperature);
             storage.setItem("hourThree", data.properties.periods[2].temperature);
@@ -398,6 +404,7 @@ function getHourlyForecast(hourlyForecastURL) {
         .catch(error => console.log('There was a getHourlyForecast error: ', error))
 }
 
+// Builds the page from all the information we have in the local data
 function buildPage() {
 
     // Input all the local storage values into variables
@@ -414,6 +421,9 @@ function buildPage() {
     let gusts = storage.getItem('gusts');
     let high = storage.getItem('high');
     let low = storage.getItem('low');
+
+    console.log(high);
+
     // Temperature for each hour
     let hourOne = storage.getItem('hourOne');
     let hourTwo = storage.getItem('hourTwo');
@@ -428,6 +438,9 @@ function buildPage() {
     let hourEleven = storage.getItem('hourEleven');
     let hourTwelve = storage.getItem('hourTwelve');
     let hourThirteen = storage.getItem('hourThirteen');
+
+    console.log(hourOne);
+
     // Specific hour with AM or PM
     let hour1 = storage.getItem('hour1');
     let hour2 = storage.getItem('hour2');
@@ -442,6 +455,8 @@ function buildPage() {
     let hour11 = storage.getItem('hour11');
     let hour12 = storage.getItem('hour12');
     let hour13 = storage.getItem('hour13');
+
+    console.log(hour1);
 
     // Use those varibles and input them into the HTML or where needed
     // Inputting the hourly forcast with hour 
@@ -458,6 +473,7 @@ function buildPage() {
     document.getElementById('hour11').innerHTML = hour11;
     document.getElementById('hour12').innerHTML = hour12;
     document.getElementById('hour13').innerHTML = hour13;
+
     // Inputting the hourly forecast with the temperature
     document.getElementById('hourOne').innerHTML = hourOne;
     document.getElementById('hourTwo').innerHTML = hourTwo;
@@ -472,6 +488,7 @@ function buildPage() {
     document.getElementById('hourEleven').innerHTML = hourEleven;
     document.getElementById('hourTwelve').innerHTML = hourTwelve;
     document.getElementById('hourThirteen').innerHTML = hourThirteen;
+    
     // Inputting the location and current weather data into the correct spots
     let fullName = locName + ', ' + locState;
     console.log(fullName);
