@@ -86,37 +86,29 @@ h1 {
     list-style: none;
 }
 
-#recipes ul {
+#recipeList {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
-#recipes li {
-    list-style: none;
+.imageList {
+    background-color: #808080;
     display: flex;
     justify-content: center;
 }
 
-.listImage {
-    background-color: #808080;
-}
-
-.listLink {
+#recipeList a {
     margin-bottom: 10px;
     margin-top: 5px;
     font-size: 1.1em;
 }
 
-.imageWithText {
-    display: flex;
-    flex-direction: column;
+
+#recipes figure {
     width: 45%;
-}
-
-
-#recipes img {
-    width: 50%;
+    margin: 0px;
 }
 
 #acmeRocket p {
@@ -153,6 +145,15 @@ h1 {
 
 #madeByText {
     margin-bottom: 1px;
+}
+
+#recipes img {
+    width: 60%;
+}
+
+#recipes figcaption {
+    display: flex;
+    justify-content: center;
 }
 
 /* 3. Mobile Rules */
@@ -220,7 +221,7 @@ h1 {
     font-size: 2.2em;
 }
 
-#recipes ul {
+#recipesList {
     padding-left: 0px;
     margin-top: 0px;
 }
