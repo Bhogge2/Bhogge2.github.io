@@ -22,7 +22,7 @@ navBar.addEventListener('click', function (evt) {
             break;
     }
 
-    let acmeURL = "/acme/js/acme.json";
+    let acmeURL = "/acme-project/js/acme.json";
 
     fetch(acmeURL)
         .then(function (response) {
