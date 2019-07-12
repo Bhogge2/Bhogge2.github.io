@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ACME</title>
+    <title id = "pageTitle">ACME</title>
     <link rel="stylesheet" type="text/css" href="../acme/css/screen.css" media="screen">
 </head>
 
@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <main>
-            <section id="homePage" class="">
+            <div id="homePage" class="">
                 <h1>Welcome to Acme!</h1>
                 <section id="acmeRocket">
 
@@ -60,29 +60,44 @@
                         <h2>Featured Recipes</h2>
                         <ul>
                             <div class="imageWithText">
-                                <li class = "listImage"><img src="../acme/images/recipes/bbqsand.jpg" alt="pulled roadrunner bbq"></li>
-                                <li class = "listLink"><a href="#">Pulled Roadrunner BBQ</a></li>
+                                <li class="listImage"><img src="../acme/images/recipes/bbqsand.jpg"
+                                        alt="pulled roadrunner bbq"></li>
+                                <li class="listLink"><a href="#">Pulled Roadrunner BBQ</a></li>
                             </div>
 
                             <div class="imageWithText">
-                                <li class = "listImage"><img src="../acme/images/recipes/potpie.jpg" alt="roadrunner pot pie"></li>
-                                <li class = "listLink"><a href="#">Roadrunner Pot Pie</a></li>
+                                <li class="listImage"><img src="../acme/images/recipes/potpie.jpg"
+                                        alt="roadrunner pot pie"></li>
+                                <li class="listLink"><a href="#">Roadrunner Pot Pie</a></li>
                             </div>
 
                             <div class="imageWithText">
-                                <li class = "listImage"><img src="../acme/images/recipes/soup.jpg" alt="roadrunner soup"></li>
-                                <li class = "listLink"><a href="#">Roadrunner Soup</a></li>
+                                <li class="listImage"><img src="../acme/images/recipes/soup.jpg" alt="roadrunner soup">
+                                </li>
+                                <li class="listLink"><a href="#">Roadrunner Soup</a></li>
                             </div>
 
                             <div class="imageWithText">
-                                <li class = "listImage"><img src="../acme/images/recipes/taco.jpg" alt="roadrunner tacos"></li>
-                                <li class = "listLink"><a href="#">Roadrunner Tacos</a></li>
+                                <li class="listImage"><img src="../acme/images/recipes/taco.jpg" alt="roadrunner tacos">
+                                </li>
+                                <li class="listLink"><a href="#">Roadrunner Tacos</a></li>
                             </div>
                         </ul>
                     </section>
                 </div>
-            </section>
-            <Section id="contentPage" class="hide"></Section>
+            </div>
+            <div id="contentPage" class="hide">
+                <h1 id="itemName"></h1>
+                <div id="aboutItem">
+                    <img id="itemImage" src="" alt="">
+                    <div id="itemInfo">
+                        <p id="itemDescription"></p>
+                        <p id="madeByText"><b>Made by: </b><span id="manufacturer"></span></p>
+                        <p id="reviewsText"><b>Reviews: </b><span id="reviewScore"></span> stars</p>
+                        <h2 id="priceText"><b>Price: $<span id="price"></span></b></h2>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <p>&copy; 2018 ACME, All rights reserved. <br>
