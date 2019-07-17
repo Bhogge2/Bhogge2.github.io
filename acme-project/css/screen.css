@@ -128,15 +128,8 @@ footer p {
 }
 
 /* Content Pages */
-#aboutItem {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
-}
-
 #itemImage {
-    max-width: 50%;
+    max-width: 100%;
     padding: 0px 5px 0px 5px;
 }
 
@@ -234,6 +227,13 @@ h1 {
     margin-top: 0px;
 }
 
+#aboutItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* 4. Large Screen Rules */
 
 @media screen and (min-width: 800px) {
@@ -308,6 +308,13 @@ h1 {
 
     #itemInfo {
         font-size: 2em;
+    }
+
+    #aboutItem {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
     }
 
 }
