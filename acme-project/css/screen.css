@@ -30,12 +30,23 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#navBar {
-    background-color: #de2226;
-}
-
 #content {
     background-color: white;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#homePage {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+#navBar {
+    background-color: #de2226;
 }
 
 nav ul {
@@ -54,6 +65,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Footer */
 footer p {
     border-top: solid 3px #000;
     margin-top: 0px;
@@ -62,16 +74,7 @@ footer p {
     font-size: 1.4em;
 }
 
-h1 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#homePage {
-    display: flex;
-    flex-direction: column;
-}
-
+/* acmeRocket section */
 #acmeRocket {
     display: flex;
     flex-direction: column;
@@ -86,6 +89,11 @@ h1 {
     list-style: none;
 }
 
+#acmeRocket p {
+    margin: 0px;
+}
+
+/* Recipe Section */
 #recipeList {
     display: flex;
     justify-content: space-around;
@@ -105,16 +113,21 @@ h1 {
     font-size: 1.1em;
 }
 
-
 #recipes figure {
     width: 45%;
     margin: 0px;
 }
 
-#acmeRocket p {
-    margin: 0px;
+#recipes img {
+    width: 50%;
 }
 
+#recipes figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+/* Content Pages */
 #aboutItem {
     display: flex;
     flex-direction: row;
@@ -147,22 +160,22 @@ h1 {
     margin-bottom: 1px;
 }
 
-#recipes img {
-    width: 50%;
-}
-
-#recipes figcaption {
-    display: flex;
-    justify-content: center;
-}
-
 /* 3. Mobile Rules */
-
 body>div {
     width: 95%;
     margin: 0 auto;
 }
 
+/* Navigation */
+nav ul li {
+    padding: 5px 14px 5px 0px;
+}
+
+nav a {
+    font-size: 4.8vw;
+}
+
+/* acmeRocket Section */
 #acmeRocket {
     background-image: url(../images/site/feature.jpg);
     height: 200px;
@@ -188,19 +201,13 @@ body>div {
     margin-bottom: 0px;
 }
 
-nav ul li {
-    padding: 5px 14px 5px 0px;
-}
-
-nav a {
-    font-size: 4.8vw;
-}
-
+/* Reviews and Recipes */
 #reviewsAndRecipes h2 {
     margin-left: 10px;
     font-size: 2em;
 }
 
+/* Reviews */
 #reviews h2 {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -210,6 +217,7 @@ nav a {
     margin-top: 10px;
 }
 
+/*  */
 #recipes h2 {
     margin-bottom: 10px;
 }
