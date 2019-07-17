@@ -39,12 +39,14 @@ function getNavList() {
 
 //This function builds the navigations bar through js
 function buildNavBar(navItems) {
-    let navigationList = '<li><a href="https://bhogge2.github.io/acme-project/index.html" title="Go to the home page">Home</a></li>';
+    let navigationList = '<ul><li><a href="https://bhogge2.github.io/acme-project/index.html" title="Go to the home page">Home</a></li>';
 
     for (let i = 0; navItems.length > i; i++) {
         navigationList += '<li><a href="https://bhogge2.github.io/acme-project/' + 
         navItems[i] + '.html" title ="Go to the ' + navItems[i] + 'page">' + navItems[i] + '</li>';
     }
+
+    navigationList += '</ul>';
 
     console.log("Nav Bar inner HTML = " + navigationList);
     
