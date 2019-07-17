@@ -55,7 +55,7 @@ nav ul {
     margin-bottom: 0px;
 }
 
-nav ul li {
+#navBar ul li {
     display: inline-block;
     list-style: none;
 }

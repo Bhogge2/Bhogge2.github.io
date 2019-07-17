@@ -5,10 +5,55 @@
 "use strict";
 
 // Variables for Function Use
-
 let navBar = document.getElementById("navBar");
+let acmeURL = "/acme-project/js/acme.json";
+
+// Run function
+getNavList(acmeURL);
 
 // Functions
+// Get the names o
+function getNavList() {
+    fetch(acmeURL)
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new ERROR('Response not OK.');
+        })
+        .then(function (data) {
+            // Let's see what we got back
+            console.log('Json object from getLocation function:');
+            console.log(data);
+            // Create an array that contains the name of each page
+            let navItems = Object.keys(data);
+            console.log(navItems);
+
+            //Set the inner HTML to the list items
+            let navBar = document.getElementById('navBar');
+            navBar.innerHTML = buildNavBar(navItems);
+
+        })
+        .catch(error => console.log('There was a getLocation error: ', error))
+}
+
+//This function builds the navigations bar through js
+function buildNavBar(navItems) {
+    let navigationList = '<li><a href="https://bhogge2.github.io/acme-project/index.html" title="Go to the home page">Home</a></li>';
+
+    for (let i = 0; navItems.length > i; i++) {
+        navigationList += '<li><a href="https://bhogge2.github.io/acme-project/' + 
+        navItems[i] + '.html" title ="Go to the ' + navItems[i] + 'page">' + navItems[i] + '</li>';
+    }
+
+    console.log("Nav Bar inner HTML = " + navigationList);
+    
+    return navigationList;
+
+
+}
+
+// Run this when something on the navBar is clicked
 navBar.addEventListener('click', function (evt) {
 
     // Get the city name
@@ -21,8 +66,6 @@ navBar.addEventListener('click', function (evt) {
             evt.preventDefault();
             break;
     }
-
-    let acmeURL = "/acme-project/js/acme.json";
 
     fetch(acmeURL)
         .then(function (response) {
@@ -77,8 +120,8 @@ navBar.addEventListener('click', function (evt) {
             document.getElementById("pageTitle").innerHTML = "ACME | " + name;
 
             // Display content pages and hide home page
-            contentPage.setAttribute('class', ''); 
-            homePage.setAttribute('class', 'hide'); 
+            contentPage.setAttribute('class', '');
+            homePage.setAttribute('class', 'hide');
 
         })
 
