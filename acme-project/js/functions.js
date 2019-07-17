@@ -9,7 +9,7 @@ let navBar = document.getElementById("navBar");
 let acmeURL = "/acme-project/js/acme.json";
 
 // Run function
-getNavList(acmeURL);
+getNavList();
 
 // Functions
 // Get the names o
@@ -39,13 +39,16 @@ function getNavList() {
 
 //This function builds the navigations bar through js
 function buildNavBar(navItems) {
+    // Create starting html for nav list
     let navigationList = '<ul><li><a href="https://bhogge2.github.io/acme-project/index.html" title="Go to the home page">Home</a></li>';
 
+    // Input the rest of the items into the nav along with the proper HTML
     for (let i = 0; navItems.length > i; i++) {
         navigationList += '<li><a href="https://bhogge2.github.io/acme-project/' + 
-        navItems[i] + '.html" title ="Go to the ' + navItems[i] + 'page">' + navItems[i] + '</li>';
+        navItems[i].toLowerCase() + '.html" title ="Go to the ' + navItems[i] + ' page">' + navItems[i] + '</li>';
     }
 
+    // Close ul
     navigationList += '</ul>';
 
     console.log("Nav Bar inner HTML = " + navigationList);
@@ -129,8 +132,5 @@ navBar.addEventListener('click', function (evt) {
 
         .catch(function (error) {
             console.log('There was a fetch problem: ', error.message);
-            statusContainer.innerHTML = 'Sorry, the data could not be processed.';
-
-
         })
 })

@@ -16,7 +16,7 @@
 /* 2. General Rules */
 
 .hide {
-    display: none!important;
+    display: none !important;
 }
 
 html {
@@ -129,12 +129,14 @@ footer p {
 
 /* Content Pages */
 #itemImage {
-    max-width: 100%;
-    padding: 0px 5px 0px 5px;
+    max-width: 80%;
+    padding: 5px 0px;
+    margin: 5 auto;
 }
 
 #itemInfo {
-    width: 50%;
+    width: 90%;
+    margin: 5 auto;
     display: flex;
     flex-direction: column;
 }
@@ -214,6 +216,7 @@ nav a {
 #recipes h2 {
     margin-bottom: 10px;
 }
+
 #reviews li {
     font-size: 1.4em;
 }
@@ -232,6 +235,11 @@ h1 {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    font-size: 1.4em;
+}
+
+#contentPage {
+    padding-left: 10px;
 }
 
 /* 4. Large Screen Rules */
@@ -304,6 +312,7 @@ h1 {
 
     #itemImage {
         padding: 0px 20px 0px 20px;
+        max-width: 100%;
     }
 
     #itemInfo {
@@ -317,5 +326,12 @@ h1 {
         align-items: flex-start;
     }
 
-}
+    #contentPage {
+        padding-left: 0px;
+    }
 
+    #itemName {
+        padding-left: 20px;
+    }
+
+}
