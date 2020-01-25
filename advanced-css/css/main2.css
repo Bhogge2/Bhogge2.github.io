@@ -1,0 +1,225 @@
+/* Table of Contents 
+1. Imports
+2. General Rules
+3. Mobile Rules
+4. Large Screen Rules
+*/
+/* 1. Imports */
+/* Variables */
+/*Import Lora font*/
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+/* Import Normalize */
+@import url(../css/normalize.css);
+/* Mixins */
+/* 2. General Rules */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header h1 {
+  margin-top: 0px;
+  padding-top: 50px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+header li {
+  padding-bottom: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: #FAEBD7;
+}
+
+header a:visited {
+  color: #FAEBD7;
+}
+
+header a:active {
+  color: #DEB887;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+p > a {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+p > a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+p > a:active {
+  color: #DEB887;
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
+
+h2 > a {
+  color: black;
+}
+
+h2 > a:visited {
+  color: black;
+}
+
+h2 > a:active {
+  color: #DEB887;
+}
+
+h2 > a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+main article {
+  background-color: white;
+  width: 90%;
+  margin-top: 20px;
+  -webkit-box-shadow: 3px 3px 3px #d1d1d1;
+          box-shadow: 3px 3px 3px #d1d1d1;
+  margin-bottom: 20px;
+}
+
+.post-date {
+  color: grey;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-bottom: -10px;
+}
+
+figure {
+  display: --webkit-box;
+  display: --webkit-flex;
+  display: --ms-flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* 3. Mobile Rules */
+header {
+  background-color: #6495ED;
+  overflow: hidden;
+}
+
+main {
+  display: --webkit-box;
+  display: --webkit-flex;
+  display: --ms-flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FAEBD7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  width: 80%;
+}
+
+.post-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  font-size: 4.5vw;
+}
+
+.post-date {
+  font-size: 4.5vw;
+}
+
+hr {
+  margin: 0px 20px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 7vw;
+}
+
+/* 4. Large Screen Rules */
+@media screen and (min-width: 800px) {
+  header {
+    position: fixed;
+    left: 0px;
+    width: 25%;
+    height: 100%;
+  }
+  header h1 {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  header li {
+    padding-right: 40px;
+  }
+  hr {
+    margin: 0px 40px;
+  }
+  main {
+    position: absolute;
+    width: 75%;
+    right: 0px;
+  }
+  main article {
+    width: 80%;
+  }
+  .post-date {
+    font-size: 1.5vw;
+    padding-top: 50px;
+    padding-left: 60px;
+    margin-bottom: -15px;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  img {
+    width: 50%;
+  }
+  p {
+    font-size: 1.5vw;
+  }
+  .post-content {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=main2.css.map */
