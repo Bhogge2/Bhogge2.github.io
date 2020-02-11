@@ -1,0 +1,526 @@
+
+
+csslint: There are 105 problems in C:\Users\bradf\OneDrive\Bhogge2.github.io\acme-project\css\screen.css.
+
+screen.css
+1: warning at line 11, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url(../css/normalize.css);
+
+screen.css
+2: warning at line 14, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+screen.css
+3: warning at line 19, col 5
+Use of !important
+    display: none !important;
+
+screen.css
+4: warning at line 23, col 5
+The box-sizing property isn't supported in IE6 and IE7.
+    box-sizing: border-box;
+
+screen.css
+5: warning at line 33, col 1
+Don't use IDs in selectors.
+#content {
+
+screen.css
+6: warning at line 37, col 1
+Rule doesn't have all its properties in alphabetical order.
+h1 {
+
+screen.css
+7: warning at line 42, col 1
+Don't use IDs in selectors.
+#homePage {
+
+screen.css
+8: warning at line 48, col 1
+Don't use IDs in selectors.
+#navBar {
+
+screen.css
+9: warning at line 52, col 1
+Rule doesn't have all its properties in alphabetical order.
+nav ul {
+
+screen.css
+10: warning at line 55, col 20
+Values of 0 shouldn't have units specified.
+    margin-bottom: 0px;
+
+screen.css
+11: warning at line 58, col 1
+Don't use IDs in selectors.
+#navBar ul li {
+
+screen.css
+12: warning at line 69, col 1
+Rule doesn't have all its properties in alphabetical order.
+footer p {
+
+screen.css
+13: warning at line 71, col 17
+Values of 0 shouldn't have units specified.
+    margin-top: 0px;
+
+screen.css
+14: warning at line 78, col 1
+Don't use IDs in selectors.
+#acmeRocket {
+
+screen.css
+15: warning at line 78, col 1
+Rule doesn't have all its properties in alphabetical order.
+#acmeRocket {
+
+screen.css
+16: warning at line 84, col 1
+Don't use IDs in selectors.
+#acmeRocket ul {
+
+screen.css
+17: warning at line 88, col 1
+Don't use IDs in selectors.
+#acmeRocket ul li {
+
+screen.css
+18: warning at line 92, col 1
+Don't use IDs in selectors.
+#acmeRocket p {
+
+screen.css
+19: warning at line 93, col 13
+Values of 0 shouldn't have units specified.
+    margin: 0px;
+
+screen.css
+20: warning at line 97, col 1
+Don't use IDs in selectors.
+#recipeList {
+
+screen.css
+21: warning at line 97, col 1
+Rule doesn't have all its properties in alphabetical order.
+#recipeList {
+
+screen.css
+22: warning at line 110, col 1
+Don't use IDs in selectors.
+#recipeList a {
+
+screen.css
+23: warning at line 110, col 1
+Rule doesn't have all its properties in alphabetical order.
+#recipeList a {
+
+screen.css
+24: warning at line 116, col 1
+Don't use IDs in selectors.
+#recipes figure {
+
+screen.css
+25: warning at line 116, col 1
+Rule doesn't have all its properties in alphabetical order.
+#recipes figure {
+
+screen.css
+26: warning at line 118, col 13
+Values of 0 shouldn't have units specified.
+    margin: 0px;
+
+screen.css
+27: warning at line 121, col 1
+Don't use IDs in selectors.
+#recipes img {
+
+screen.css
+28: warning at line 125, col 1
+Don't use IDs in selectors.
+#recipes figcaption {
+
+screen.css
+29: warning at line 131, col 1
+Don't use IDs in selectors.
+#itemImage {
+
+screen.css
+30: warning at line 131, col 1
+Rule doesn't have all its properties in alphabetical order.
+#itemImage {
+
+screen.css
+31: warning at line 133, col 18
+Values of 0 shouldn't have units specified.
+    padding: 5px 0px;
+
+screen.css
+32: warning at line 137, col 1
+Don't use IDs in selectors.
+#itemInfo {
+
+screen.css
+33: warning at line 137, col 1
+Rule doesn't have all its properties in alphabetical order.
+#itemInfo {
+
+screen.css
+34: warning at line 144, col 1
+Don't use IDs in selectors.
+#priceText {
+
+screen.css
+35: warning at line 147, col 17
+Values of 0 shouldn't have units specified.
+    margin-top: 0px;
+
+screen.css
+36: warning at line 150, col 1
+Don't use IDs in selectors.
+#itemInfo p {
+
+screen.css
+37: warning at line 151, col 17
+Values of 0 shouldn't have units specified.
+    margin-top: 0px;
+
+screen.css
+38: warning at line 154, col 1
+Don't use IDs in selectors.
+#madeByText {
+
+screen.css
+39: warning at line 159, col 1
+Rule doesn't have all its properties in alphabetical order.
+body>div {
+
+screen.css
+40: warning at line 166, col 27
+Values of 0 shouldn't have units specified.
+    padding: 5px 14px 5px 0px;
+
+screen.css
+41: warning at line 174, col 1
+Don't use IDs in selectors.
+#acmeRocket {
+
+screen.css
+42: warning at line 174, col 1
+Rule doesn't have all its properties in alphabetical order.
+#acmeRocket {
+
+screen.css
+43: warning at line 182, col 1
+Don't use IDs in selectors.
+#acmeRocket h2 {
+
+screen.css
+44: warning at line 182, col 13
+Heading (h2) should not be qualified.
+#acmeRocket h2 {
+
+screen.css
+45: warning at line 182, col 1
+Rule doesn't have all its properties in alphabetical order.
+#acmeRocket h2 {
+
+screen.css
+46: warning at line 187, col 1
+Don't use IDs in selectors.
+#acmeRocket ul img {
+
+screen.css
+47: warning at line 191, col 1
+Don't use IDs in selectors.
+#acmeRocket ul {
+
+screen.css
+48: warning at line 191, col 1
+Rule doesn't have all its properties in alphabetical order.
+#acmeRocket ul {
+
+screen.css
+49: warning at line 193, col 5
+Fallback background-color (hex or RGB) should precede RGBA background-color.
+    background-color: rgba(255, 255, 255, 0.5);
+
+screen.css
+50: warning at line 194, col 17
+Values of 0 shouldn't have units specified.
+    margin-top: 0px;
+
+screen.css
+51: warning at line 196, col 20
+Values of 0 shouldn't have units specified.
+    margin-bottom: 0px;
+
+screen.css
+52: warning at line 200, col 1
+Don't use IDs in selectors.
+#reviewsAndRecipes h2 {
+
+screen.css
+53: warning at line 200, col 20
+Heading (h2) should not be qualified.
+#reviewsAndRecipes h2 {
+
+screen.css
+54: warning at line 200, col 20
+Heading (h2) has already been defined.
+#reviewsAndRecipes h2 {
+
+screen.css
+55: warning at line 200, col 1
+Rule doesn't have all its properties in alphabetical order.
+#reviewsAndRecipes h2 {
+
+screen.css
+56: warning at line 206, col 1
+Don't use IDs in selectors.
+#reviews h2 {
+
+screen.css
+57: warning at line 206, col 10
+Heading (h2) should not be qualified.
+#reviews h2 {
+
+screen.css
+58: warning at line 206, col 10
+Heading (h2) has already been defined.
+#reviews h2 {
+
+screen.css
+59: warning at line 206, col 1
+Rule doesn't have all its properties in alphabetical order.
+#reviews h2 {
+
+screen.css
+60: warning at line 208, col 20
+Values of 0 shouldn't have units specified.
+    margin-bottom: 0px;
+
+screen.css
+61: warning at line 211, col 1
+Don't use IDs in selectors.
+#reviews ul {
+
+screen.css
+62: warning at line 216, col 1
+Don't use IDs in selectors.
+#recipes h2 {
+
+screen.css
+63: warning at line 216, col 10
+Heading (h2) should not be qualified.
+#recipes h2 {
+
+screen.css
+64: warning at line 216, col 10
+Heading (h2) has already been defined.
+#recipes h2 {
+
+screen.css
+65: warning at line 220, col 1
+Don't use IDs in selectors.
+#reviews li {
+
+screen.css
+66: warning at line 224, col 1
+Heading (h1) has already been defined.
+h1 {
+
+screen.css
+67: warning at line 228, col 1
+Don't use IDs in selectors.
+#recipesList {
+
+screen.css
+68: warning at line 228, col 1
+Rule doesn't have all its properties in alphabetical order.
+#recipesList {
+
+screen.css
+69: warning at line 229, col 19
+Values of 0 shouldn't have units specified.
+    padding-left: 0px;
+
+screen.css
+70: warning at line 230, col 17
+Values of 0 shouldn't have units specified.
+    margin-top: 0px;
+
+screen.css
+71: warning at line 233, col 1
+Don't use IDs in selectors.
+#aboutItem {
+
+screen.css
+72: warning at line 233, col 1
+Rule doesn't have all its properties in alphabetical order.
+#aboutItem {
+
+screen.css
+73: warning at line 241, col 1
+Don't use IDs in selectors.
+#contentPage {
+
+screen.css
+74: warning at line 249, col 5
+Rule doesn't have all its properties in alphabetical order.
+    body>div {
+
+screen.css
+75: warning at line 262, col 5
+Don't use IDs in selectors.
+    #acmeRocket ul {
+
+screen.css
+76: warning at line 262, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #acmeRocket ul {
+
+screen.css
+77: warning at line 267, col 5
+Heading (h1) has already been defined.
+    h1 {
+
+screen.css
+78: warning at line 272, col 5
+Don't use IDs in selectors.
+    #acmeRocket {
+
+screen.css
+79: warning at line 272, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #acmeRocket {
+
+screen.css
+80: warning at line 273, col 9
+Background image '../images/site/feature.jpg' was used multiple times, first declared at line 175, col 5.
+        background-image: url(../images/site/feature.jpg);
+
+screen.css
+81: warning at line 280, col 5
+Don't use IDs in selectors.
+    #reviewsAndRecipes {
+
+screen.css
+82: warning at line 285, col 5
+Don't use IDs in selectors.
+    #reviews {
+
+screen.css
+83: warning at line 289, col 5
+Don't use IDs in selectors.
+    #reviews li {
+
+screen.css
+84: warning at line 293, col 5
+Don't use IDs in selectors.
+    #recipes {
+
+screen.css
+85: warning at line 297, col 5
+Don't use IDs in selectors.
+    #acmeRocket h2 {
+
+screen.css
+86: warning at line 297, col 17
+Heading (h2) should not be qualified.
+    #acmeRocket h2 {
+
+screen.css
+87: warning at line 297, col 17
+Heading (h2) has already been defined.
+    #acmeRocket h2 {
+
+screen.css
+88: warning at line 297, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #acmeRocket h2 {
+
+screen.css
+89: warning at line 303, col 5
+Don't use IDs in selectors.
+    #reviewsAndRecipes h2 {
+
+screen.css
+90: warning at line 303, col 24
+Heading (h2) should not be qualified.
+    #reviewsAndRecipes h2 {
+
+screen.css
+91: warning at line 303, col 24
+Heading (h2) has already been defined.
+    #reviewsAndRecipes h2 {
+
+screen.css
+92: warning at line 308, col 5
+Don't use IDs in selectors.
+    #acmeRocket p {
+
+screen.css
+93: warning at line 310, col 17
+Values of 0 shouldn't have units specified.
+        margin: 0px;
+
+screen.css
+94: warning at line 313, col 5
+Don't use IDs in selectors.
+    #itemImage {
+
+screen.css
+95: warning at line 313, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #itemImage {
+
+screen.css
+96: warning at line 314, col 18
+Values of 0 shouldn't have units specified.
+        padding: 0px 20px 0px 20px;
+
+screen.css
+97: warning at line 314, col 27
+Values of 0 shouldn't have units specified.
+        padding: 0px 20px 0px 20px;
+
+screen.css
+98: warning at line 318, col 5
+Don't use IDs in selectors.
+    #itemInfo {
+
+screen.css
+99: warning at line 322, col 5
+Don't use IDs in selectors.
+    #aboutItem {
+
+screen.css
+100: warning at line 322, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #aboutItem {
+
+screen.css
+101: warning at line 329, col 5
+Don't use IDs in selectors.
+    #contentPage {
+
+screen.css
+102: warning at line 330, col 23
+Values of 0 shouldn't have units specified.
+        padding-left: 0px;
+
+screen.css
+103: warning at line 333, col 5
+Don't use IDs in selectors.
+    #itemName {
+
+screen.css
+104: warning
+Too many font-size declarations (15), abstraction needed.
+
+screen.css
+105: warning
+You have 3 h1s, 6 h2s defined in this stylesheet.

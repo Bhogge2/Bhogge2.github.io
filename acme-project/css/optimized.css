@@ -1,0 +1,302 @@
+/*** uncss> filename: https://bhogge2.github.io/acme-project/css/screen.css ***/
+/* Table of Contents 
+1. Imports
+2. General Rules
+3. Mobile Rules
+4. Large Screen Rules
+*/
+
+/* 1. Imports */
+
+/* Normalize for browsers */
+@import url(../css/normalize.css);
+
+/* Lato font */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* 2. General Rules */
+
+.hide {
+    display: none !important;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/site/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+#content {
+    background-color: white;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#homePage {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+#navBar {
+    background-color: #de2226;
+}
+
+/* Footer */
+footer p {
+    border-top: solid 3px #000;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* acmeRocket section */
+#acmeRocket {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#acmeRocket ul {
+    color: #990033;
+}
+
+#acmeRocket ul li {
+    list-style: none;
+}
+
+#acmeRocket p {
+    margin: 0px;
+}
+
+/* Recipe Section */
+#recipeList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imageList {
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+}
+
+#recipeList a {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+#recipes figure {
+    width: 45%;
+    margin: 0px;
+}
+
+#recipes img {
+    width: 50%;
+}
+
+#recipes figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+/* Content Pages */
+#itemImage {
+    max-width: 80%;
+    padding: 5px 0px;
+    margin: 5px auto;
+}
+
+#itemInfo {
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#priceText {
+    color: #de2226;
+    font-size: 1.6em;
+    margin-top: 0px;
+}
+
+#itemInfo p {
+    margin-top: 0px;
+}
+
+#madeByText {
+    margin-bottom: 1px;
+}
+
+/* 3. Mobile Rules */
+body>div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+/* acmeRocket Section */
+#acmeRocket {
+    background-image: url(../images/site/feature.jpg);
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#acmeRocket h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#acmeRocket ul img {
+    margin-top: 2px;
+}
+
+#acmeRocket ul {
+    padding-right: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 0px;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+/* Reviews and Recipes */
+#reviewsAndRecipes h2 {
+    margin-left: 10px;
+    font-size: 2em;
+}
+
+/* Reviews */
+#reviews h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#reviews ul {
+    margin-top: 10px;
+}
+
+/*  */
+#recipes h2 {
+    margin-bottom: 10px;
+}
+
+#reviews li {
+    font-size: 1.4em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+#aboutItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.4em;
+}
+
+#contentPage {
+    padding-left: 10px;
+}
+
+/* 4. Large Screen Rules */
+
+@media screen and (min-width: 800px) {
+
+    body>div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #acmeRocket ul {
+        padding-right: 100px;
+        background-color: transparent;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding-left: 10px;
+    }
+
+    #acmeRocket {
+        background-image: url(../images/site/feature.jpg);
+        height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #reviewsAndRecipes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #reviews {
+        width: 60%;
+    }
+
+    #reviews li {
+        font-size: 2em;
+    }
+
+    #recipes {
+        width: 40%;
+    }
+
+    #acmeRocket h2 {
+        font-size: 3.8em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #reviewsAndRecipes h2 {
+        font-size: 3em;
+        margin-top: 10px;
+    }
+
+    #acmeRocket p {
+        font-size: 2em;
+        margin: 0px;
+    }
+
+    #itemImage {
+        padding: 0px 20px 0px 20px;
+        max-width: 100%;
+    }
+
+    #itemInfo {
+        font-size: 2em;
+    }
+
+    #aboutItem {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #contentPage {
+        padding-left: 0px;
+    }
+
+    #itemName {
+        padding-left: 20px;
+    }
+
+}
